@@ -12,7 +12,7 @@ RUN mkdir /app
 COPY cow/cow /app/
 COPY start.sh /app/
 
-VOLUME ~/.cow
+VOLUME /app
 
 WORKDIR /app
 RUN chmod +x start.sh && chmod +x cow
