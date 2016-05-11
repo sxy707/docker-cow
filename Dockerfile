@@ -17,4 +17,6 @@ VOLUME ~/.cow
 WORKDIR /app
 RUN chmod +x start.sh && chmod +x cow
 
+EXPOSE ${LISTEN_PORT:-17777}
+
 CMD ["./start.sh"]
