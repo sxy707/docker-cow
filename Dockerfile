@@ -2,7 +2,6 @@ FROM alpine
 MAINTAINER sean
 
 
-EXPOSE $LISTEN_PORT
 
 RUN rm -Rf ~/.cow
 RUN rm -Rf /app
