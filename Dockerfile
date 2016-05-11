@@ -14,4 +14,6 @@ RUN echo "proxy = ss://${SS_ENCRYPT_METHOD:-aes-256-cfb}:${SS_PASSWORD:-000000}@
 COPY ./cow/cow /cow/cow
 RUN chmod +x /cow/cow
 
+VOLUME ~/.cow
+
 CMD ["/cow/cow"]
