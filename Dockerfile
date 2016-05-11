@@ -20,4 +20,4 @@ RUN echo "proxy = ss://$SS_ENCRYPT_METHOD:$SS_PASSWORD@$SS_SERVER_IP:$SS_SERVER_
 COPY ./cow/cow /cow/cow
 RUN chmod +x /cow/cow
 
-CMD["./cow/cow"]
+CMD["/cow/cow"]
