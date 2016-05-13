@@ -17,8 +17,6 @@ COPY start.sh /app/
 WORKDIR /app
 RUN chmod +x start.sh && chmod +x cow
 
-EXPOSE ${LISTEN_PORT:-17777}
-
 VOLUME /cowconfig
 
 CMD ["./start.sh"]
